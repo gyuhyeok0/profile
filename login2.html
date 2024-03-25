@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/logIn.css">
+</head>
+
+<style>
+            
+            
+        .b1{
+            display: flex;
+            justify-content: center;
+        }
+            
+            body {
+            font-family: pretendard, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 330px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #1b1b1b;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px); /* 버튼의 padding 값 10px * 2만큼 감안하여 계산합니다. */
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        button[type="submit"] {
+            width: 101.5%; /* 수정된 부분 */
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #932121;
+            background-color: #731F1F;
+            border-radius: 20px;
+            outline: none;
+            transition: border-color 0.3s ease;
+
+            
+        }
+            
+        #log.login{
+            color: white;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        button[type="submit"]:focus {
+            border-color: #007bff;
+        }
+
+        button[type="submit"] {
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            color: #e3e3e3;
+            transition: color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            color: #007bff;
+        }
+
+        .error_message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+</style>
+
+<body>
+
+    <div class="wrap2">
+
+        <div class="wrap2-1">
+            <div class="wrap1-1">
+            <a href="/index.html"><p name="LOGO">Himedia Academy</p></a>
+            </div>
+
+            <div class="wrap3-1">
+                <a href="profile.html">
+                    <p id="pt1">Please LogIn</p>
+                </a>
+                
+            </div>
+            <div class="b1">
+        
+                <form id="frmNIDLogin" name="frmNIDLogin" target="_top" autocomplete="off" action="" method="POST">
+                    <div class="panel_wrap">
+                        <div class="panel_item" style="display: block;">
+                            <div class="panel_inner" role="tabpanel" aria-controls="loinid">
+                                <div class="id_pw_wrap">
+                                    <div class="input_row" id="id_line">
+                                        <input type="text" id="id" name="id" placeholder="아이디" title="아이디" class="input_text" maxlength="41" required>
+                                    </div>
+                                    <div class="input_row" id="pw_line">
+                                        <input type="password" id="pw" name="pw" placeholder="비밀번호" title="비밀번호" class="input_text" maxlength="16" required>
+                                    </div>
+                                </div>
+                                <div class="login_error_wrap" id="err_empty_id" style="display: none;">
+                                    <div class="error_message">
+                                        <strong>아이디</strong>를 입력해 주세요.
+                                    </div>
+                                </div>
+                                <div class="login_error_wrap" id="err_empty_pw" style="display: none;">
+                                    <div class="error_message">
+                                        <strong>비밀번호</strong>를 입력해 주세요.
+                                    </div>
+                                </div>
+                                <div class="btn_login_wrap">
+                                    <button type="submit" class="btn_login" id="log.login">
+                                        <span class="btn_text">SIGN IN</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+        
+            </div>
+
+
+        </div> 
+
+
+
+
+
+        <div class="wrap2-2">
+            <div class="wrap1-2">
+                <a href="list.html">
+                    <p name="List">List</p>
+                </a>
+                <p name="LogIn">LogIn</p>
+                <p name="Membership">Membership</p>
+            </div>
+
+            <div class="wrap2-3">
+                <div class="wrap2-5">
+                    <div class="t1">
+                        <p>OHGIRAFFERS</p>
+                    </div>
+                </div>
+                <div class="wrap2-4">
+                        <div class="t2">
+                            <p>To view the portfolio, login is required. Your portfolio contains your works, experiences, and skills, and can only be accessed after logging in. Through logging in, your personal information and portfolio will be securely protected and can be shared with others. Create an account to share your portfolio!</p>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

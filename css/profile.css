@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+a {
+    color: white;
+    text-decoration: none; /* 링크의 밑줄 제거 */
+}
+
+
+.wrap1{
+    background-color: #131313;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between; /* 자식 요소 간 간격을 최대화하여 왼쪽과 오른쪽 끝에 정렬합니다. */
+    align-items: center;
+}
+.wrap1-1{
+    margin-left: 20px;
+}
+
+.wrap1-2{
+    display: flex;
+    gap: 30px;
+    color: white;
+    font-family: Pretendard, sans-serif;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+p[name="LOGO"] {
+    color: white;
+    font-family: Pretendard, sans-serif;
+    font-size: 30px;
+}
+
+
+.wrap2{
+    height: 500vh;
+    background-color: #131313;
+
+}
+
+.wrap2-1{
+    display: flex;
+    justify-content: center;
+}
+
+#t1{
+    color: white;
+}
